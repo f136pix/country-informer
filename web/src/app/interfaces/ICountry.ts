@@ -3,6 +3,7 @@ export interface ICountry {
     countryCode: string;
     flagUrl: string,
     borders: IBorder[]
+    populationData: IPopulationData[]
 }
 
 export interface IBorder {
@@ -11,4 +12,9 @@ export interface IBorder {
     countryCode: string
     officialName: string
     region: string
+}
+
+export interface IPopulationData {
+    value: number,
+    year: number
 }

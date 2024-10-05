@@ -5,6 +5,7 @@ import {usePathname} from 'next/navigation';
 import NeighboursList from "@/app/[countryCode]/components/NeighboursList";
 import {ICountry} from "@/app/interfaces/ICountry";
 import Image from "next/image";
+import PopulationChart from "@/app/[countryCode]/components/PopulationChart";
 
 const CountryDetails = () => {
     const pathName = usePathname();
@@ -40,7 +41,9 @@ const CountryDetails = () => {
                 <div className={"w-[50%]"}>
                     <NeighboursList data={country.borders} />
                 </div>
-                <div className={"w-[50%]"}></div>
+                <div className={"w-[50%]"}>
+                    <PopulationChart data={country.populationData}/>
+                </div>
             </section>
         </div>
     );
