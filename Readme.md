@@ -2,8 +2,8 @@
 
 Clone the repo
 ```bash
-$ git clone 
-$ cd
+$ git clone https://github.com/f136pix/country-informer.git
+$ cd country-informer
 ```
 
 Run using the Makefile
